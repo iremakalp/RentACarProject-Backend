@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Business.BusinessAspect.Autofac;
 
 namespace Business.Concrete
 {
@@ -20,13 +21,13 @@ namespace Business.Concrete
         {
             _brandDal = brandDal;
         }
-
+        [SecuredOperation("Admin")]
         public IResult Add(Brand brand)
         {
             _brandDal.Add(brand);
             return new SuccessResult(Messages.BrandAdded);
         }
-
+        [SecuredOperation("Admin")]
         public IResult Delete(Brand brand)
         {
             _brandDal.Delete(brand);
@@ -37,7 +38,7 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<Brand>>(_brandDal.GetAll());
         }
-
+        [SecuredOperation("Admin")]
         public IResult Update(Brand brand)
         {
             _brandDal.Update(brand);
