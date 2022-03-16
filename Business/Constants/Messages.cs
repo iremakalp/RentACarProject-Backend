@@ -44,5 +44,7 @@ namespace Business.Constants
         public static string AccessTokenCreated = "Access token oluşturuldu";
 
         public static string AuthorizationDenied = "Access token oluşturuldu";
+        public static string ColorExists = "Aynı renk eklenemez";
+        public static string BrandNameExists = "Aynı marka eklenemez";
     }
 }
