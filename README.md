@@ -1,5 +1,5 @@
 # RentACarProject-Backend
 
-#### C# Yazılım Geliştirici Yetiştirme Kampı Rent a Car projesi backend
+#### C# Developer Training Camp Car Rental project backend
 
-Bu projede .Net Core Katmanlı mimari ve SOLID prensipleri kullanılarak araç kiralama sistemi backend kodları yazılmıştır. 
+In this project, car rental system backend codes were written using .Net Core Layered architecture and SOLID principles.
